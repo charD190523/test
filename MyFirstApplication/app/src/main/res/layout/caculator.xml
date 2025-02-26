@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/labeled"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="Caculator"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/pt1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Nhập số thứ nhất"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/labeled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp" />
+
+    <EditText
+        android:id="@+id/pt2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Nhập số thứ hai"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/pt1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp" />
+
+    <Spinner
+        android:id="@+id/spinner_operators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/operators_list"
+        app:layout_constraintTop_toBottomOf="@id/pt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="70dp"
+        android:text="Tính" />
+
+    <TextView
+        android:id="@+id/hienthi"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="Hiển thị kết quả:"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintLeft_toRightOf="@+id/hienthi"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="20dp"
+        />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hienthi"
+        android:hint="Nhập tên tỉnh thành..."
+        android:padding="10dp"
+        android:completionThreshold="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

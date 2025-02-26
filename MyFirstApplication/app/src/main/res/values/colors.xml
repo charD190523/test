@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="custom_red_light">#FFCDD2</color>
+    <color name="custom_red">#FF5733</color>
+    <color name="custom_red_dark">#D32F2F</color>
+
+    <!-- Blue Shades -->
+    <color name="custom_blue_light">#BBDEFB</color>
+    <color name="custom_blue">#3498DB</color>
+    <color name="custom_blue_dark">#1976D2</color>
+
+    <!-- Green Shades -->
+    <color name="custom_green_light">#C8E6C9</color>
+    <color name="custom_green">#28A745</color>
+    <color name="custom_green_dark">#388E3C</color>
+
+    <!-- Yellow Shades -->
+    <color name="custom_yellow_light">#FFF9C4</color>
+    <color name="custom_yellow">#FFEB3B</color>
+    <color name="custom_yellow_dark">#FBC02D</color>
+
+    <!-- Orange Shades -->
+    <color name="custom_orange_light">#FFE0B2</color>
+    <color name="custom_orange">#FF9800</color>
+    <color name="custom_orange_dark">#F57C00</color>
+
+    <!-- Purple Shades -->
+    <color name="custom_purple_light">#E1BEE7</color>
+    <color name="custom_purple">#9C27B0</color>
+    <color name="custom_purple_dark">#7B1FA2</color>
+
+    <!-- Teal Shades -->
+    <color name="custom_teal_light">#B2DFDB</color>
+    <color name="custom_teal">#009688</color>
+    <color name="custom_teal_dark">#00796B</color>
+
+    <!-- Gray Shades -->
+    <color name="custom_gray_light">#F5F5F5</color>
+    <color name="custom_gray">#9E9E9E</color>
+    <color name="custom_gray_dark">#616161</color>
+
+    <!-- Black and White -->
+    <color name="custom_black">#000000</color>
+    <color name="custom_white">#FFFFFF</color>
+</resources>
