@@ -2,6 +2,8 @@ package com.example.myfirstapplication.model;
 
 public class Cat {
     private int image;
+
+    private String type;
     private String name;
 
     public Cat(String s, int cat1) {
